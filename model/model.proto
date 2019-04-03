@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package model;
+option go_package = "github.com/imfuxiao/grpc_learn/model";
+
+message LoginRequest {
+  string account = 1;
+  string pwd = 2;
+}
+
+message UserInfo {
+  string name = 1;
+}

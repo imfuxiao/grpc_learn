@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "model/model.proto";
+
+package service;
+
+option go_package = "github.com/imfuxiao/grpc_learn/service";
+
+service LoginService {
+  rpc Login(model.LoginRequest) returns (model.UserInfo);
+}
